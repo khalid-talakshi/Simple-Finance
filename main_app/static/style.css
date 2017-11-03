@@ -1,0 +1,11 @@
+.deposit {
+	color: green;
+}
+
+.withdrawl {
+	color: red;
+}
+
+.transaction-deck {
+	max-width: 900px;
+}
