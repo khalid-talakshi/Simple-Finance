@@ -1,0 +1,8 @@
+{
+  "name": "simpleFinance",
+  "version": "0.0.0",
+  "description": "see master/README.md",
+  "dependencies": {
+    "angular": "^1.6.8"
+  }
+}
