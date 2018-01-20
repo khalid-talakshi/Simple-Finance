@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="simpleFinance">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Finance</title>
+  </head>
+  <body>
+    <div ng-controller="transactionCtrl as transactions">
+      <div ng-repeat="transaction in transactionList.transactions">
+        <transaction></transaction>
+      </div>
+    </div>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../app.js"></script>
+  </body>
+</html>
