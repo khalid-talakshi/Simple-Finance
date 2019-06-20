@@ -1,19 +1,18 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import {createStackNavigator, createAppContainer} from 'react-navigation'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
+import Landing from './src/Landing'
+
+const AppNavigator = createStackNavigator({
+  Landing: Landing
+});
+
+const AppContainter = createAppContainer(AppNavigator);
+
+export default class App extends React.Component {
+  render() {
+    return <AppContainter />
+  }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
